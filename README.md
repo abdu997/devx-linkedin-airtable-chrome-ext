@@ -1,6 +1,6 @@
 # DevX Staffing's LinkedIn x Airtable Chrome Extension
 
-This extension will check if they LinkedIn profile you're visiting is in your Airtable Base. If not a button will render in the profile's action bar that will add the profile to your Airtable Base.
+This extension will check if the LinkedIn profile you're visiting is in your Airtable Base. If not, a button will render in the profile's action bar that will add the profile to your Airtable Base.
 
 ## Installation
 
@@ -10,7 +10,7 @@ This extension will check if they LinkedIn profile you're visiting is in your Ai
 4. Toggle “Developer Mode”
 5. Click “Load Unpacked”
 6. Choose the unzipped folder from step #2
-7. Naviagte to a LinkedIn profile
+7. Navigate to a LinkedIn profile
 
 ## Settings
 
