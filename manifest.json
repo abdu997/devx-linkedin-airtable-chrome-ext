@@ -1,0 +1,51 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Airtable Checker",
+    "version": "1.0",
+    "icons": {
+        "128": "/icons/icon-sm.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "icons/icon-white.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "devx-linkedin-popup.html",
+        "default_icon": {
+            "48": "/icons/icon-sm.png",
+            "128": "/icons/icon-md.png"
+        }
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.linkedin.com/*",
+        "https://api.airtable.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.linkedin.com/*"
+            ],
+            "js": [
+                "devx-linkedin.js"
+            ],
+            "css": [
+                "/css/styles.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

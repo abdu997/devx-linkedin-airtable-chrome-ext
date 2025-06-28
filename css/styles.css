@@ -1,0 +1,70 @@
+.devx-button {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    background: #1e31ad;
+    display: flex;                /* ← enables side-by-side layout */
+    align-items: center;         /* ← vertically centers icon + text */
+    margin: 10px;
+    border-radius: 25px;
+    padding: 0 10px
+}
+
+.entity-result__item .devx-button {
+    margin-top: 8px;
+}
+
+.devx-button:disabled {
+    cursor: not-allowed;
+}
+
+.devx-button:disabled {
+    background: #3B3B3B;
+}
+
+.devx-button-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.devx-button:not([disabled]):hover {
+    background: #121d67;
+    transition: 0.5s;
+}
+
+.devx-button-text {
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+
+.devx-button:not([disabled]):hover {
+    background: #1d31b2;
+    transition: 0.5s;
+}
+
+.devx-notice {
+    padding: 20px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    min-width: 200px;
+    z-index: 9999;
+    color: white;
+}
+
+.devx-notice.success {
+    background-color: green;
+}
+
+.devx-notice.error {
+    background-color: #f44336;
+}
+
+.devx-notice.loading {
+    background-color: #1e31ad;
+}

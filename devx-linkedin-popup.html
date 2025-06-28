@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                width: 250px;
+                font-family: Roboto, system-ui, sans-serif;
+            }
+
+            #devx-wrapper {
+                padding: 10px;
+            }
+
+            #devx-header {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            #devx-header img {
+                width: 200px;
+            }
+
+            #devx-header h1 {
+                font-size: 12px;
+                margin: 0;
+            }
+
+            .devx-form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            label {
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 2px;
+            }
+
+            textarea,
+            input[type='text'] {
+                border: 2px solid rgba(26, 115, 232, 0.4);
+                padding: 6px 8px;
+                border-radius: 4px;
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 13px;
+            }
+
+            .devx-buttons {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 10px;
+            }
+
+            .button {
+                font-family: Roboto, system-ui, sans-serif;
+                align-items: center;
+                border: 1px solid rgb(218, 220, 224);
+                border-radius: 4px;
+                color: rgb(26, 115, 232);
+                cursor: pointer;
+                display: inline-flex;
+                font-weight: 500;
+                height: 32px;
+                justify-content: center;
+                min-width: 5.14em;
+                padding: 8px 16px;
+                background: white;
+            }
+
+            .button:hover {
+                background: rgba(66, 133, 244, 0.04);
+            }
+
+            .button.primary {
+                background: rgb(26, 115, 232);
+                color: #fff;
+                border-color: rgb(26, 115, 232);
+            }
+
+            .button.primary:hover {
+                background: rgba(26, 115, 232, 0.9);
+                box-shadow: 0 1px 2px rgba(66, 133, 244, 0.3),
+                    0 1px 3px 1px rgba(66, 133, 244, 0.15);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="devx-wrapper">
+            <div id="devx-header">
+                <img
+                    src="https://framerusercontent.com/images/sYFByhHOiwW6xYGuYl3Z41LiLEY.png?scale-down-to=1024"
+                    alt="Logo"
+                />
+            </div>
+            <div id="devx-containers">
+                <form class="devx-form">
+                    <div>
+                        <label for="devxApiKeyField">API Key</label>
+                        <textarea
+                            id="devxApiKeyField"
+                            name="devxApiKeyField"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <label for="devxBaseNameField">Base Name</label>
+                        <textarea
+                            id="devxBaseNameField"
+                            name="devxBaseNameField"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <label for="devxBaseIDField">Base ID</label>
+                        <textarea id="devxBaseIDField" name="devxBaseIDField">
+                        </textarea>
+                    </div>
+                </form>
+                <div class="devx-buttons">
+                    <button class="button primary" id="saveDevxSettings">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="js/devx-linkedin-popup.js"></script>
+    </body>
+</html>
